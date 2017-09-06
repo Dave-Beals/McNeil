@@ -1,0 +1,302 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px; }
+
+p {
+  margin: 0; }
+
+#navbar {
+  height: 40px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%; }
+
+.fluid-menu {
+  position: absolute;
+  right: 25px;
+  top: 15px; }
+
+.fluid-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style-type: none; }
+
+.navLinks {
+  padding: 0 .65rem 0;
+  color: black;
+  opacity: 0.40;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+  font-family: "Open Sans Condensed", sans-serif; }
+  .navLinks:hover {
+    opacity: 1.0; }
+
+.navLinks span {
+  position: relative;
+  display: block;
+  curser: pointer; }
+
+.navLine:before,
+.navLine:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  background: gray; }
+
+.navLine:before {
+  left: -2px; }
+
+.navLine:after {
+  right: 2px;
+  background: gray;
+  -webkit-transition: width 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.75s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.navLine:hover:before {
+  background: gray;
+  width: 100%;
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+
+.navLine:hover:after {
+  background: transparent;
+  width: 100%;
+  -webkit-transition: 0s;
+  transition: 0s; }
+
+.mainImg1 {
+  background-image: url("images/main-mcneil.jpg");
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.scrollArrow {
+  width: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 50%;
+  display: none; }
+
+.mainImg2 {
+  background-image: url("images/territorialMcNeil.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.mainImg3 {
+  background-image: url("images/federalCellblock.jpg");
+  min-height: 550px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.mainImg4 {
+  background-image: url("images/stateEraMcNeil2.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.mainImg5 {
+  background-image: url("images/mcNeilSunset.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.imgHolder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.bodyImg-l {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 2.5rem 1rem 2.5rem 1rem; }
+
+.bodyImg-c {
+  margin: 0 auto 0;
+  max-width: 100%; }
+
+.bodyImg-r {
+  max-width: 100%;
+  height: auto;
+  padding: 1.5rem 2rem 1rem 1rem;
+  margin: 2.5rem auto 2.5rem; }
+
+.blockImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.25rem 0;
+  max-width: 100%; }
+
+.homeTitle {
+  height: 50%;
+  width: auto;
+  margin-top: 1.5%; }
+
+.mcNeilTitle {
+  max-height: 100%;
+  max-width: 100%; }
+
+.basicFooter {
+  background: #333435;
+  background: -webkit-gradient(linear, left top, right bottom, from(#333435), to(black));
+  background: linear-gradient(to bottom right, #333435, black);
+  border-top: 5px solid black; }
+
+.footItems {
+  color: #fcfcfc;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 1.25rem 0 2rem 2rem; }
+
+.textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem; }
+
+.textBlock-lite {
+  background: #f9fbfc;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#c9c9cc));
+  background: linear-gradient(white, #c9c9cc); }
+
+.textBlock-lite p {
+  color: #3a3a3a; }
+
+.textBlock-dark {
+  background: -webkit-gradient(linear, left top, right bottom, from(#333435), to(black));
+  background: linear-gradient(to bottom right, #333435, black);
+  color: #fcfcfc; }
+
+.eraName {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-family: "Roboto Slab", serif; }
+
+.eraName span {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #000; }
+
+.intro {
+  padding: 4rem 3rem 1rem 1rem;
+  font-size: 1.1rem; }
+
+.firstText {
+  padding: 0.75rem 3rem 0.75rem;
+  font-size: 1.1rem; }
+
+.midText {
+  padding: 0rem 1rem 0.75rem 3rem;
+  font-size: 1.1rem; }
+
+.lastText {
+  padding: 0rem 3rem 4rem 3rem;
+  font-size: 1.1rem; }
+
+.paraCaption {
+  position: absolute;
+  left: 0;
+  top: 46%;
+  width: 100%;
+  text-align: center; }
+
+.era {
+  background-color: rgba(128, 128, 128, 0.75);
+  letter-spacing: 1.5px;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  color: #fcfcfc;
+  padding: 0.5rem 1rem; }
+
+.sectionHeader {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2.5rem 0 1rem; }
+
+.sectionHeader span {
+  padding-bottom: .25rem;
+  border-bottom: 2px solid white; }
+
+/*# sourceMappingURL=main.css.map */
