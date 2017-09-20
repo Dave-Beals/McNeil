@@ -1,3 +1,6 @@
+@font-face {
+  font-family: "Alder";
+  src: url("fonts/Adler/Adler.ttf"); }
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -207,6 +210,68 @@ p {
   max-height: 100%;
   max-width: 100%; }
 
+.artifactGallery {
+  background-image: url("images/Cellhouse1.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative; }
+
+.galleryHolder {
+  width: 85%;
+  margin: 5rem 0 4rem;
+  padding: 4rem 3rem 4rem 3rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 8px solid black; }
+
+.artifactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+  position: relative; }
+
+.artifactContainer img {
+  width: 100%;
+  border: 5px solid #333435; }
+  .artifactContainer img:hover {
+    -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); }
+
+.artTitleHolder {
+  position: absolute;
+  left: 0;
+  top: 44%;
+  width: 100%;
+  text-align: center; }
+
+.artTitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  color: #fcfcfc;
+  visibility: hidden; }
+
+.artifactContainer:hover .artTitle {
+  visibility: visible; }
+
 .basicFooter {
   background: #333435;
   background: -webkit-gradient(linear, left top, right bottom, from(#333435), to(black));
@@ -247,7 +312,7 @@ p {
 .eraName {
   padding-top: 2rem;
   padding-left: 3rem;
-  font-family: "Roboto Slab", serif; }
+  font-family: "Alder", serif; }
 
 .eraName span {
   padding-bottom: 0.25rem;
@@ -285,7 +350,7 @@ p {
   padding: 0.5rem 1rem; }
 
 .sectionHeader {
-  font-family: "Roboto Slab", serif;
+  font-family: "Alder", serif;
   font-size: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -298,5 +363,18 @@ p {
 .sectionHeader span {
   padding-bottom: .25rem;
   border-bottom: 2px solid white; }
+
+.roughTitle {
+  font-family: "Alder", serif; }
+
+.artTitle {
+  font-size: 1rem; }
+
+@media (max-width: 475px) {
+  .mcNeilTitle {
+    padding: 0.5rem; } }
+@media (max-width: 375px) {
+  .mcNeilTitle {
+    padding: 2rem 0.5rem 0.5rem 0.5rem; } }
 
 /*# sourceMappingURL=main.css.map */
