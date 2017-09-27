@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Washington Crime Quiz</title>
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Corben:700|Fascinate|Open+Sans+Condensed:300|Open+Sans:700|Work+Sans:900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Roboto+Slab|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+  <body>
+    <div class="top">
+      <header class="top">
+        <div id="navbar">
+          <div class="fluid-menu">
+            <!-- <nav class="standard menu"> -->
+              <nav class="menu">
+                <ul class="fluid-nav">
+                  <li class="navLinks"><span class="navLine">HOME</span></li>
+                  <li class="navLinks"><span class="navLine">EXHIBIT</span></li>
+                  <li class="navLinks"><span class="navLine">PODCAST</span></li>
+                  <li class="navLinks"><span class="navLine">EDUCATION</span></li>
+                </ul>
+              </nav> <!---menu--->
+            <!-- </nav> -->
+          </div><!--fluid-menu-->
+        </div> <!--navbar-->
+        <h1 class="roughTitle">What is a Crime?</h1>
+      </header>
+    </div>
+
+    <div class="quizMain">
+      <div class="introText">
+        <p class="firstText">The standards for what constitutes a crime change as political shifts,
+          geopolitical events, and social norms evolve. Many inmates throughout McNeil's history were
+          imprisoned for committing acts that are no longer illegal.</p>
+        <p class="lastText">Some bizarre and outdated laws are still on the books.
+          Take the quiz below to see if you can figure out which might still land you in jail here in Washington!</p>
+      </div> <!--introText-->
+      <div class="galleryHolder">
+        <form class="quizForm" onsubmit="buildAnswers()">
+          <fieldset class="crimeQues">
+            <legend>1. When two trains come to a crossing at the same time, it is illegal for either one to cross
+              until the other has passed</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques1" id="ques1True" value="true"> TRUE
+                <input type="radio" name="ques1" id="ques1False" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques1Answer">
+          <!-- space for ques1 answer-->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>2. Any motor vehicle entering a town must be preceded by a man carrying a
+             red flag or lantern.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques2" id="ques2True" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques2" id="ques2False" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques2Answer">
+            <!-- space for ques2 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>3. It is illegal to display a hypnotized person in a store window in Everett.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques3" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques3" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques3Answer">
+            <!-- space for ques3 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>4. It is illegal to walk around in public if you have a cold.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques4" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques4" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques4Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>5. It is illegal to paint polka dots on the American flag.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques5" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques5" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques5Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>6. It is illegal to pretend that your parents are rich.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques6" value="true"> FALSE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques6" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques6Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>7. Dancing and drinking may not occur at the same establishment.</legend>
+            <!-- this is a law in Lynden WA -->
+              <label class="quizQuestion">
+                <input type="radio" name="ques7" value="TRUE"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques7" value="FALSE"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques7Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>8. It is illegal to pretend that your parents are rich.</legend>
+              <label class="quizQuestion">
+                <input type="radio" name="ques8" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques8" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques8Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>9. It is illegal to wear a fake moustache that causes laughter in church</legend>
+            <!-- FALSE this is a law in Alabama -->
+              <label class="quizQuestion">
+                <input type="radio" name="ques9" value="true"> TRUE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques9" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques9Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <fieldset class="crimeQues">
+            <legend>10. It is illegal to tie an alligator to a fire hydrant</legend>
+            <!-- FALSE this is a law in New Orleans -->
+              <label class="quizQuestion">
+                <input type="radio" name="ques10" value="true"> FALSE
+              </label>
+              <label class="quizQuestion">
+                <input type="radio" name="ques10" value="false"> FALSE
+              </label>
+          </fieldset>
+          <div class="answer" id="ques10Answer">
+            <!-- space for question 4 answer -->
+          </div>
+          <input type="submit" value="Submit">
+        </form>
+      </div> <!--galleryHolder-->
+
+    </div> <!--quizMain-->
+    <script type="text/javascript" src="script/script.js"></script>
+  </body>
+</html>

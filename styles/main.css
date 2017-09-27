@@ -250,8 +250,7 @@ p {
   position: relative; }
 
 .artifactContainer img {
-  width: 100%;
-  border: 5px solid #333435; }
+  width: 100%; }
   .artifactContainer img:hover {
     -webkit-box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
             box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25); }
@@ -266,11 +265,14 @@ p {
 .artTitle {
   font-family: "Roboto Slab", serif;
   font-size: 1rem;
-  color: #fcfcfc;
+  color: #3a3a3a;
   visibility: hidden; }
 
 .artifactContainer:hover .artTitle {
   visibility: visible; }
+
+.artifactContainer:hover img {
+  opacity: 0.5; }
 
 .basicFooter {
   background: #333435;

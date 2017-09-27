@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>From the Exhibit</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Corben:700|Fascinate|Open+Sans+Condensed:300|Open+Sans:700|Work+Sans:900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Old+Standard+TT|Roboto+Slab|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/lightbox.css">
+
+  </head>
+  <body>
+
+    <div class="top">
+      <header class="top">
+        <div id="navbar">
+          <div class="fluid-menu">
+            <!-- <nav class="standard menu"> -->
+              <nav class="menu">
+                <ul class="fluid-nav">
+                  <li class="navLinks"><span class="navLine">HOME</span></li>
+                  <li class="navLinks"><span class="navLine">EXHIBIT</span></li>
+                  <li class="navLinks"><span class="navLine">PODCAST</span></li>
+                  <li class="navLinks"><span class="navLine">EDUCATION</span></li>
+                </ul>
+              </nav> <!---menu--->
+            <!-- </nav> -->
+          </div><!--fluid-menu-->
+        </div> <!--navbar-->
+        <h1 class="roughTitle">ARTIFACT GALLERY</h1>
+      </header>
+    </div> <!--top-->
+
+    <div class="artifactGallery">
+      <!-- code for modal popout -->
+      <!-- <div id="myModal" class="modal">
+        <span class="close" onclick="document.getElementById("myModal").style.display="none"">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="modalCaption">This pegboard is history. Prison history and more information go here, along width
+          reference info including archival credit line. <b>National Parks Service: 1943.0.1</b>
+        </div>
+      </div> -->
+      <!-- end of modal popout code -->
+      <div class="galleryHolder">
+
+        <div class="fluid-container">
+
+          <div class="row">
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/pegboard.jpg" data-lightbox="gallery"><img id="pegboard" src="styles/images/artifacts/pegboard.jpg" alt="Pegboard" class="img-thumbnail"></a>
+              <!-- <div class="artTitleHolder">
+                <button type="button" class="artTitle btn-default btn-lg" data-toggle="modal" data-target="#modalDisplay">PEGBOARD</button>
+              </div> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/dogCarving.jpg" data-lightbox="gallery"><img id="carvedDog" src="styles/images/artifacts/dogCarving.jpg" alt="Carved Dog" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Carved Dog</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/handcuffs.jpg" data-lightbox="gallery"><img id="handcuffs" src="styles/images/artifacts/handcuffs.jpg" alt="Handcuffs" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Handcuffs, ca. 1880s</h3> -->
+            </div>
+          </div> <!--row-->
+
+          <div class="row">
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/guardCoat.jpg" data-lightbox="gallery"><img id="guardJacket" src="styles/images/artifacts/guardCoat.jpg" alt="Guard's Jacket" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Guard's Uniform, Jacket. ca. 1940</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/guardShirt.jpg" data-lightbox="gallery"><img id="guardShirt" src="styles/images/artifacts/guardShirt.jpg" alt="Guard's Shirt" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Guard's Uniform, Shirt. ca. 1940</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/inmateUniformModern.jpg" data-lightbox="gallery"><img id="inmateUni" src="styles/images/artifacts/inmateUniformModern.jpg" alt="Modern Inmate's Uniform" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Modern Inmate Uniform</h3> -->
+            </div>
+
+          </div> <!--row-->
+
+          <div class="row">
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/prisonShiv.jpg" data-lightbox="gallery"><img id="prisonWeapon" src="styles/images/artifacts/prisonShiv.jpg" alt="Prison Weapon" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Prison Weapon</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/prisonTray.jpg" data-lightbox="gallery"><img id="diningTray" src="styles/images/artifacts/prisonTray.jpg" alt="Dining Tray" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Dining Hall Tray, ca. 1930</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/tommyGun.jpg" data-lightbox="gallery"><img id="tommyGun" src="styles/images/artifacts/tommyGun.jpg" alt="BOP Issued Tommy Gun" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">BOP Issued Thompson Submachine Gun</h3> -->
+            </div>
+          </div> <!--row-->
+
+          <div class="row">
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/paroleViolator.png" data-lightbox="gallery"><img id="paroleViolator" src="styles/images/artifacts/paroleViolator.png" alt="Parole Violator" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">"Parole Violator"</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/BallAndChain.jpg" data-lightbox="gallery"><img id="ballChain" src="styles/images/artifacts/BallAndChain.jpg" alt="Ankle Restraint" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Ball and Chain</h3> -->
+            </div>
+            <div class="artifactContainer col-lg-4 col-md-4 col-sm-4 col-xs-12">
+              <a href="styles/images/artifacts/WaDocPatch.png" data-lightbox="gallery"><img id="docPatch" src="styles/images/artifacts/WaDocPatch.png" alt="WA DOC Patch" class="img-thumbnail"></a>
+              <!-- <h3 class="artTitle">Washington DOC Patch</h3> -->
+            </div>
+          </div> <!--row-->
+
+
+        </div> <!--fluid-container-->
+      </div> <!--galleryHolder-->
+    </div> <!--artifactGallery-->
+
+    <footer class="basicFooter">
+      <ul class="footItems">
+        <li>McNeil Island: Washington's Infamous Island Prison</li>
+        <li>Washington State History Museum</li>
+        <li>1911 Pacific Ave. Tacoma, WA</li>
+        <li>1-800-BE-THERE | washingtonhistory.org</li>
+      </ul>
+    </footer>
+    <script type="text/javascript" src="script/lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
