@@ -1,0 +1,422 @@
+@import "_variables";
+
+@font-face {
+    font-family: "Alder";
+    src: url("fonts/Adler/Adler.ttf");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+}
+
+p {
+  margin: 0;
+}
+
+#navbar {
+  height: 40px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+}
+
+.fluid-menu {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+}
+
+.fluid-nav {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+.navLinks {
+  padding: 0 .65rem 0;
+  color: $nav-clr;
+  opacity: 0.40;
+  transition: opacity 0.5s ease;
+  font-family: "Open Sans Condensed", sans-serif;
+
+// BELOW IS ALL TRANSITION FOR NAV MENU
+  &:hover {
+    opacity: 1.0;
+  }
+}
+
+.navLinks span {
+  position: relative;
+  display: block;
+  curser: pointer;
+}
+
+.navLine:before,
+.navLine:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  top: 50%;
+  background: rgb(128,128,128);
+}
+
+.navLine:before {
+  left: -2px;
+}
+
+.navLine:after {
+  right: 2px;
+  background: rgb(128,128,128);
+  transition: width 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navLine:hover:before {
+  background: rgb(128,128,128);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.navLine:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+.mainImg1 {
+  background-image: url("images/main-mcneil.jpg");
+  height: 100vh;
+  // position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.scrollArrow {
+  width: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 50%;
+  display: none;
+}
+
+.mainImg2 {
+  background-image: url("images/territorialMcNeil.jpg");
+  min-height: 500px;
+  // position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.mainImg3 {
+    background-image: url("images/federalCellblock.jpg");
+    min-height: 550px;
+    // position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mainImg4 {
+    background-image: url("images/stateEraMcNeil2.jpg");
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.mainImg5 {
+    background-image: url("images/mcNeilSunset.jpg");
+    min-height: 600px;
+    // position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.imgHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bodyImg-l {
+  max-width: 100%;
+  padding: 1rem;
+  margin: 2.5rem 1rem 2.5rem 1rem;
+}
+
+.bodyImg-c {
+  margin: 0 auto 0;
+  max-width: 100%;
+}
+
+.bodyImg-r {
+  max-width: 100%;
+  height: auto;
+  padding: 1.5rem 2rem 1rem 1rem;
+  margin: 2.5rem auto 2.5rem;
+}
+
+.blockImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 0;
+  max-width: 100%;
+}
+
+.homeTitle {
+  height: 50%;
+  // max-height: 300px;
+  width: auto;
+  margin-top: 1.5%;
+}
+
+.mcNeilTitle {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.artifactGallery {
+  background-image: url("images/Cellhouse1.jpg");
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.galleryHolder {
+  width: 85%;
+  margin: 5rem 0 4rem;
+  padding: 4rem 3rem 4rem 3rem;
+  background-color: rgba(255, 255, 255, 0.75);
+  border: 8px solid black;
+}
+
+.artifactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+
+.artifactContainer img {
+  width: 100%;
+  // border: 5px solid $txt-bg-dark;
+
+  &:hover {
+    box-shadow: 8px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+
+.artTitleHolder {
+  position: absolute;
+  left: 0;
+  top: 44%;
+  width: 100%;
+  text-align: center;
+}
+
+.artTitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  color: $fnt-dark;
+  visibility: hidden;
+}
+
+.artifactContainer:hover .artTitle {
+  visibility: visible;
+}
+
+.artifactContainer:hover img {
+  opacity: 0.6;
+}
+
+.homeIcon {
+  width: 15%;
+  padding: 1rem;
+}
+
+.basicFooter {
+  background: $txt-bg-dark;
+  background: linear-gradient(to bottom right, $txt-bg-dark, black);
+  border-top: 2px solid black;
+}
+
+.footItems {
+  color: $fnt-light;
+  font-family: "Open Sans Condensed", sans-serif;
+  padding: 1.25rem 0 2rem 2rem;
+}
+
+.footerTitle {
+  font-family: $rough-title;
+}
+
+// ALL TEXT SPACING___________________________________________
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.textBlock-lite {
+  background: $txt-bg-light;
+  background: linear-gradient(white, #c9c9cc);
+}
+
+.textBlock-lite p {
+  color: $fnt-dark;
+}
+
+.textBlock-dark {
+  background: linear-gradient(to bottom right, $txt-bg-dark, black);
+  color: $fnt-light;
+}
+
+.eraName {
+  padding-top: 2rem;
+  padding-left: 3rem;
+  font-family: $rough-title;
+}
+
+.eraName span {
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid #000;
+}
+
+.intro {
+  padding: 4rem 3rem 1rem 1rem;
+  font-size: $bdy-fnt;
+}
+
+.firstText {
+  padding: $frstTxt;
+  font-size: $bdy-fnt;
+}
+
+.midText {
+  padding: $midTxt;
+  font-size: $bdy-fnt;
+}
+
+.lastText {
+  padding: $lastTxt;
+  font-size: $bdy-fnt;
+}
+
+.paraCaption {
+  position: absolute;
+  left: 0;
+  top: 46%;
+  width: 100%;
+  text-align: center;
+}
+
+.era {
+  background-color: rgba(128,128,128,0.75);
+  letter-spacing: 1.5px;
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  color: $fnt-light;
+  padding: 0.5rem 1rem;
+}
+
+.sectionHeader {
+  font-family: $rough-title;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  padding: 2.5rem 0 1rem;
+}
+
+.sectionHeader span {
+  padding-bottom: .25rem;
+  border-bottom: 2px solid white;
+}
+
+.centerTitle {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.roughTitle {
+  font-family: $rough-title;
+  padding-left: 1rem;
+  margin-top: 3rem;
+}
+
+.artTitle {
+  font-family: $rough-title;
+  font-size: 2rem;
+  color: black;
+}
+
+@media (max-width: 991px) {
+  .artTitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 629px) {
+  .homeIcon {
+    display: none;
+  }
+  .era {
+    background-color: transparent;
+  }
+  .eraName span {
+    border-bottom: none;
+  }
+}
+
+// MEDIA QUERIES FOR HOMEPAGE
+
+@media (max-width: 475px) {
+ .mcNeilTitle {
+   padding: 0.5rem;
+ }
+}
+
+@media (max-width: 375px) {
+  .mcNeilTitle {
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+  }
+}

@@ -272,18 +272,25 @@ p {
   visibility: visible; }
 
 .artifactContainer:hover img {
-  opacity: 0.5; }
+  opacity: 0.6; }
+
+.homeIcon {
+  width: 15%;
+  padding: 1rem; }
 
 .basicFooter {
   background: #333435;
   background: -webkit-gradient(linear, left top, right bottom, from(#333435), to(black));
   background: linear-gradient(to bottom right, #333435, black);
-  border-top: 5px solid black; }
+  border-top: 2px solid black; }
 
 .footItems {
   color: #fcfcfc;
   font-family: "Open Sans Condensed", sans-serif;
   padding: 1.25rem 0 2rem 2rem; }
+
+.footerTitle {
+  font-family: "Alder", serif; }
 
 .textContainer {
   display: -webkit-box;
@@ -366,12 +373,37 @@ p {
   padding-bottom: .25rem;
   border-bottom: 2px solid white; }
 
+.centerTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center; }
+
 .roughTitle {
-  font-family: "Alder", serif; }
+  font-family: "Alder", serif;
+  padding-left: 1rem;
+  margin-top: 3rem; }
 
 .artTitle {
-  font-size: 1rem; }
+  font-family: "Alder", serif;
+  font-size: 2rem;
+  color: black; }
 
+@media (max-width: 991px) {
+  .artTitle {
+    font-size: 1.5rem; } }
+@media (max-width: 629px) {
+  .homeIcon {
+    display: none; }
+
+  .era {
+    background-color: transparent; }
+
+  .eraName span {
+    border-bottom: none; } }
 @media (max-width: 475px) {
   .mcNeilTitle {
     padding: 0.5rem; } }
