@@ -409,6 +409,9 @@ p {
     padding: 0.5rem; } }
 @media (max-width: 375px) {
   .mcNeilTitle {
-    padding: 2rem 0.5rem 0.5rem 0.5rem; } }
+    padding: 2rem 0.5rem 0.5rem 0.5rem; }
+
+  .mainImg1 .mainImg2 .mainImg3 .mainImg4 .mainImg5 {
+    background-attachment: initial; } }
 
 /*# sourceMappingURL=main.css.map */
