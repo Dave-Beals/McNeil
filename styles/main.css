@@ -412,12 +412,6 @@ p {
     padding: 2rem 0.5rem 0.5rem 0.5rem; }
 
   .mainImg1 .mainImg2 .mainImg3 .mainImg4 .mainImg5 {
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1; } }
+    background-attachment: scroll; } }
 
 /*# sourceMappingURL=main.css.map */
