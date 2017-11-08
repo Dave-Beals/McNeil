@@ -13,6 +13,9 @@ body, html {
 p {
   margin: 0; }
 
+a:hover {
+  text-decoration: none; }
+
 #navbar {
   height: 40px;
   position: relative;
@@ -412,6 +415,9 @@ p {
     padding: 2rem 0.5rem 0.5rem 0.5rem; }
 
   .mainImg1 .mainImg2 .mainImg3 .mainImg4 .mainImg5 {
-    background-attachment: scroll; } }
+    background-attachment: scroll; }
+
+  .sectionHeader {
+    padding-left: 2rem; } }
 
 /*# sourceMappingURL=main.css.map */
